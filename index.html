@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--- ICONOS --->
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- MENU SUPERIOR-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mi Portafolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i> <!--- Icono barra --->
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">  
+            <div class="contenido-img"> 
+                <img src="img/photo_me.jpg" alt="">
+            </div>
+            <h1>SERGIO HERNANDEZ GARCIA</h1>
+            <h2>Ingeniero en Programacion</h2>
+            <div class="redes"> <!--- Iconos de redes sociales --->
+                <a href="#"><i class="fa-brands fa-square-facebook"></i><a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-line"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p><span>Mi nombre es Sergio Hernandez Garcia</span> Soy originario de la Ciudad de San Luis Potosi, Mexico; nacido el 14 de enero del 2002. Actualmente estoy cursando la universidad, dentro de la Licenciatura en Ingenieria de Programacion de Videojuegos en UNIAT. La meta en la vida a la que aspiro es poder superar la trayectoria profesional y vida humanitaria de mis padres.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            14-01-2002
+                        </li>
+                        <li>
+                            <strong>Ciudad Natal</strong>
+                            San Luis Potosi, S.L.P.: Mexico
+                        </li>
+                        <li>
+                            <strong>Nacionalidad</strong>
+                            Mexicana
+                        </li>
+                        <li>
+                            <strong>Profesion/Actividad Principal</strong>
+                            Estudiante
+                        </li>
+                        <li>
+                            <strong>Idiomas</strong>
+                            Español = Origen,
+                            Ingles = C1 (Certificado TOEFL),
+                            Frances = A1 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>CURRICULUM</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Educación</h3>
+                    <ul>
+                        <li>
+                            <strong>Profesional</strong>
+                            University of Advanced Technologies 2022 - Actualidad, 
+                            Universidad Iberoamericana León 2020 - 2021
+                        </li>
+                        <li>
+                            <strong>Bachillerato</strong>
+                            Universidad TecMilenio, Campus S.L.P 2017 - 2020
+                        </li>
+                        <li>
+                            <strong>Secundaria</strong>
+                            Instituto Calmecac 2014 - 2017
+                        </li>
+                        <li>
+                            <strong>Primaria</strong>
+                            Instituto Calmecac 2008 - 2014
+                        </li>
+                        <li>
+                            <strong>Kinder</strong>
+                            Instituto Calmecac 2005 - 2008
+                        </li>
+                    </ul>
+                    <h3>Experiencia Laboral</h3>
+                    <ul>
+                        <li>
+                            <strong>Makimore Sushi, S.L.P.</strong>
+                            Barista y Sushero Oct/20/2022 - Actualidad
+                        </li>
+                        <li>
+                            <strong>Inari Sushi, S.L.P.</strong>
+                            Barman, Cocinero, Sushero Abr/01/2022 - Oct/12/2022
+                        </li>
+                        <li>
+                            <strong>Freelance, León</strong>
+                            Tutor Particular Nv. Primaria y Kinder 2020-2021
+                        </li>
+                        <li>
+                            <strong>Brisa Del Mar, S.L.P.</strong>
+                            Pinche de Cocina Jul/05/2019 - Dic/28/2019
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+</body>
+</html>

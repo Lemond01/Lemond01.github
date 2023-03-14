@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&family=Roboto+Condensed:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 25px 30px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Heebo', sans-serif;
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{ /*Hace horizontal el menu superior */
+    display: flex;
+    list-style: none;
+} 
+.contenedor-header header nav ul li a{ /*Mejora el aspecto del menu superior */
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{ /*Hace que se ilumine cuando pasas el raton */
+    color: #1CB698;
+}
+.nav-responsive{ /*Oculta el simbolo de barra */
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+} 
+/*
+.contenedor-img{
+    border: 3px solid tomato;
+    border-radius: 10%;
+}
+No funciona, crea un borde mucho mas grande de lo que es la img*/ 
+.inicio{ /*Img de fondo */
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgba(30, 35, 38, 1.0)), url(img/photo_back);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{ /*Centra la img y los datos, ademas de que crea un segundo fondo*/
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+} 
+.inicio .contenido-banner img{ /*Acomoda tamanio y mejora a la vista*/
+    padding: 20px;
+    margin-top: 40px;
+    border: 15px solid #1CB698;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.inicio .contenido-banner h1{ /*Acomoda el nombre y lo hace mas llamativo*/
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Roboto Condensed';
+}
+.inicio .contenido-banner h2{ /*Acomoda profesion y lo hace mas llamativo*/
+    font-size: 23px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{ /*Acomoda icono redes y lo hace mas llamativo*/
+    color: #fff;
+    line-height: 35px;
+    font-size: 23px;
+}
+.inicio .contenido-banner .redes a:hover{ /*Ilumina la pasar el raton*/
+    background-color: #1CB698;
+}
+
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum{
+    background-color:#1CB698;;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
